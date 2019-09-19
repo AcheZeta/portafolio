@@ -4,9 +4,9 @@ import React from 'react';
 const Skill = () => (
     <div className='Skills'>
         <div className='Skill-container'>
-            <div className='skill-item'>
+            <div className='Skill-item'>
                 <h5>HTML</h5>
-                <div className='skill-bar'>
+                <div className='Skill-bar'>
                     <span>50%</span>
                 </div>
             </div>

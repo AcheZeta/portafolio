@@ -9,17 +9,17 @@ import Education from '../componets/Education';
 import Certificates from '../componets/Certificade';
 import Skill from '../componets/Skill';
 
-
 const App = () => {
   return (
     <Main>
       <Sidebar />
-      <Info />
-      <About /> 
+      <About />
       <Social />
-      <Education />
-      <Certificates />
-      <Skill />
+      <Info>
+        <Education />
+        <Certificates />
+        <Skill />
+      </Info>
     </Main>
   );
 };
