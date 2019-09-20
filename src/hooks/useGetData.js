@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react'
 
-const api = 'https://us-central1-gndx-cv.cloudfunctions.net/me'
+const api = 'https://us-central1-api-hame.cloudfunctions.net/api'
 
 // 'use' es una convencion para uso de Hooks
 const useGetData = () => {
