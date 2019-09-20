@@ -8,8 +8,11 @@ import Social from '../componets/Social';
 import Education from '../componets/Education';
 import Certificates from '../componets/Certificade';
 import Skill from '../componets/Skill';
+import useGetData from '../hooks/useGetData'
 
 const App = () => {
+  const data = useGetData()
+  console.log(data)
   return (
     <Main>
       <Sidebar />
