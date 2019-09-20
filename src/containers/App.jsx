@@ -14,7 +14,9 @@ const App = () => {
   const data = useGetData();
   console.log(data);
 
-  return (
+  return data.length === 0 ? (
+    <h1>Cargando...</h1>
+  ) : (
     <Main>
       <Sidebar />
       <About
@@ -28,7 +30,7 @@ const App = () => {
       <Info>
         <Education data={data.education} />
         <Certificates data={data.experience} />
-        <Skill data={data.skills}/>
+        <Skill data={data.skills} />
       </Info>
     </Main>
   );

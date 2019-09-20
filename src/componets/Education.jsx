@@ -1,15 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-const Education = () => (
-    <div className='Education'>
-        <div className='Education-container'>
-            <div className='Education-item'>
-                <h3>Laboratoria</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed, culpa laudantium consectetur eaque officiis expedita nostrum odit alias similique aliquam ducimus autem repellendus eligendi, tempore facilis nihil? Consequatur, vero.</p>
-            </div>
+const Education = props => (
+  <div className="Education">
+    <div className="Education-container">
+      {props.data.map((edu, index) => (
+        <div className="Education-item" key={`Edu-${index}`}>
+        <h3>{edu.institution}</h3>
+        <p>{edu.degree}</p>
+        <p>{edu.description}</p>
+        <p>{edu.startDate}-{edu.endDate}</p>
         </div>
+      ))}
     </div>
-)
-    
+  </div>
+);
+
 export default Education;
