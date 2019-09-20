@@ -3,6 +3,7 @@ import React from 'react';
 
 const Education = props => (
   <div className="Education">
+      <h2>Educación</h2>
     <div className="Education-container">
       {props.data.map((edu, index) => (
         <div className="Education-item" key={`Edu-${index}`}>

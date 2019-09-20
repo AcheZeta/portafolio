@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-const About = ({ avatar, name, bio, profession }) => (
+const About = ({ avatar, name, bio, profession, address }) => (
     <div className='About'>
         <div className='About-container'>
             <div className='About-avatar'>
@@ -17,11 +17,11 @@ const About = ({ avatar, name, bio, profession }) => (
                 <p>{ bio }</p>
             </div>
             <div className='About-location'>
-                <p>Cdmx</p>
+                <p>{ address }</p>
             </div>
-            <div className='About-social'>
+            {/* <div className='About-social'>
                 <p>Sigueme en mis redes sociales</p>
-            </div>
+            </div> */}
         </div>
     </div>
 )
