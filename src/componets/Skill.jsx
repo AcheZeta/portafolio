@@ -11,10 +11,9 @@ const Skill = props => (
                 <div className='Skill-bar'>
                 </div>
               </div>
-            ))}    
-            
+            ))}
         </div>
     </div>
 )
-
+ 
 export default Skill

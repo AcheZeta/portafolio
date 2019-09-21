@@ -1,15 +1,24 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-const Social = () => (
-    <div className='Socail'>
-        <div className='Social'>
-            <div className='Social-item'>
-                <h3>Social</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed, culpa laudantium consectetur eaque officiis expedita nostrum odit alias similique aliquam ducimus autem repellendus eligendi, tempore facilis nihil? Consequatur, vero.</p>
+const Social = props => (
+  <div className="Social">
+    <h2>Social</h2>
+    <div className="Social">
+      {props.social && (
+        <ul>
+          {props.map((item, index) => (
+            <div className="Social-item" key={`soc-${index}`}>
+              <li> key={`soc-${index}`}</li>
+              <a href={item.url} target="_blank">
+                {item.name}
+              </a>
             </div>
-        </div>
+          ))}
+        </ul>
+      )}
     </div>
-)
-    
+  </div>
+);
+
 export default Social;

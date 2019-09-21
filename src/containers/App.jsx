@@ -25,8 +25,8 @@ const App = () => {
         bio={data.bio}
         profession={data.profession}
         address={data.address}
+        social={data.social}
       />
-      <Social social={data.social} />
       <Info>
         <Education data={data.education} />
         <Certificates data={data.experience} />
