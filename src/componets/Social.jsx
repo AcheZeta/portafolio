@@ -9,6 +9,8 @@ const Social = props => (
         <ul>
           {props.map((item, index) => (
             <div className="Social-item" key={`soc-${index}`}>
+              <div>{item}</div>
+              <div>{item.url}</div>
               <li> key={`soc-${index}`}</li>
               <a href={item.url} target="_blank">
                 {item.name}
