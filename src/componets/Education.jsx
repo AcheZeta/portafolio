@@ -1,16 +1,23 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react';
+import H2Styled from '../Styled/H2Styled';
+import H3Styled from '../Styled/H3Styled';
+import PStyled from '../Styled/PStyled';
 
 const Education = props => (
   <div className="Education">
-      <h2>Educación</h2>
+    <H2Styled name="Educación" />
     <div className="Education-container">
       {props.data.map((edu, index) => (
         <div className="Education-item" key={`Edu-${index}`}>
-        <h3>{edu.institution}</h3>
-        <p>{edu.degree}</p>
-        <p>{edu.description}</p>
-        <p>{edu.startDate}-{edu.endDate}</p>
+          <H3Styled>
+            <span>{edu.institution}</span>
+            <span>{edu.degree}</span>
+            <span>{edu.description}</span>
+            <span>
+              {edu.startDate}-{edu.endDate}
+            </span>
+          </H3Styled>
         </div>
       ))}
     </div>
