@@ -3,13 +3,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Social from './Social'
 
-const AboutStyled = styled.div`
+const AboutStyle = styled.div`
   text-align: center;
 `
 const AboutAvatar = styled.div`
   padding: 2em 0 0 0;
 `
-const AboutImg = styled.img`
+const AboutAvatarImg = styled.img`
   border-radius: 100%;
   width: 160px;
   height: 160px;
@@ -22,7 +22,7 @@ const AboutName = styled.div`
   text-align: center;
 `
 
-const AboutH2 = styled.h2`
+const Abouth2 = styled.h2`
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   letter-spacing: 1.2px;
@@ -48,18 +48,22 @@ const AboutLocation = styled.p`
   font-weight: 300;
 `
 const About = ({ avatar, name, profession, bio, address, social }) => (
-  <AboutStyled>
-    <AboutAvatar>
-      <AboutImg src={avatar} alt={name} />
-    </AboutAvatar>
-    <AboutName className='About-name'>
-      <AboutH2>{name}</AboutH2>
-    </AboutName>
-    <AboutProfession>{profession}</AboutProfession>
-    <AboutBio>{bio}</AboutBio>
-    <AboutLocation>{address}</AboutLocation>
-    <Social Social={social} />
-  </AboutStyled>
+  <AboutStyle>
+    <div className='About-container'>
+      <AboutAvatar>
+        <AboutAvatarImg src={avatar} alt={name} />
+      </AboutAvatar>
+      <AboutName>
+        <Abouth2>{name}</Abouth2>
+      </AboutName>
+      <AboutProfession>{profession}</AboutProfession>
+      <AboutBio>{bio}</AboutBio>
+      <AboutLocation>{address}</AboutLocation>
+      <div className='About-social'>
+        <Social social={social} />
+      </div>
+    </div>
+  </AboutStyle>
 )
 
 export default About
