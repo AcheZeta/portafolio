@@ -25,11 +25,12 @@ const AboutName = styled.div`
 const AboutH2 = styled.h2`
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  letter-spacing: 1.2px;
   color: #3f0f3f;
   margin: 0.5 0 0 0;
 `;
 const AboutProfession = styled.p`
-  margin: 0.2em 0 1em 0;
+  margin: .2em 0 1em 0;
   letter-spacing 1.6px;
   font-weight: 300;
   color: #3f0f3f;
