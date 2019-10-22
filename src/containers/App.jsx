@@ -1,17 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import Main from '../componets/Main';
-import Sidebar from '../componets/Sidebar';
-import Info from '../componets/Info';
-import About from '../componets/About';
+import React from 'react'
+import Main from '../componets/Main'
+import Sidebar from '../componets/Sidebar'
+import Info from '../componets/Info'
+import About from '../componets/About'
 // import Social from '../componets/Social';
-import Education from '../componets/Education';
-import Certificates from '../componets/Certificade';
-import Skill from '../componets/Skill';
-import useGetData from '../hooks/useGetData';
+import Education from '../componets/Education'
+import Certificates from '../componets/Certificade'
+import Skill from '../componets/Skill'
+import useGetData from '../hooks/useGetData'
 
 const App = () => {
-  const data = useGetData();
+  const data = useGetData()
+  console.log(data)
 
   return data.length === 0 ? (
     <h1>Cargando...</h1>
@@ -32,7 +33,7 @@ const App = () => {
         <Skill data={data.skills} />
       </Info>
     </Main>
-  );
-};
+  )
+}
 
-export default App;
+export default App
