@@ -1,18 +1,43 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
+import styled from 'styled-components'
+
+const SocialStyle = styled.div`
+  margin: 0 auto;
+  display: block;
+`
+
+const SocialUl = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
+
+const SocialLi = styled.li`
+  display: inline;
+  margin: 0 1em 0 0;
+`
+
+const SocialAnchor = styled.a`
+  color: #212121;
+  text-decoration: none;
+  font-size: 1.2em;
+`
 
 const Social = props => (
-  <div className='Social'>
+  <SocialStyle>
     {props.social && (
-      <ul>
+      <SocialUl>
         {props.social.map((item, index) => (
-          <li key={`social-${index}`} target='_blank'>
-            <a href={item.url}>{item.name}</a>
-          </li>
+          <SocialLi key={`social-${index}`}>
+            <SocialAnchor href={item.url} target='_blank'>
+              {item.name}
+            </SocialAnchor>
+          </SocialLi>
         ))}
-      </ul>
+      </SocialUl>
     )}
-  </div>
+  </SocialStyle>
 )
 
 export default Social
