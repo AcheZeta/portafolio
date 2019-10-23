@@ -1,14 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-const StyledP = styled.p`
-  color: #7a757a;
-  font-size: 1em;
+const StyledParam = styled.p`
+  color: #757575;
   font-weight: 300;
-  margin: 0.5em 0;
-`;
+  margin: 0.5em 0 1.2em 0;
+`
 
-const PStyled = ({ name }) => <StyledH3>{name}</StyledH3>;
+const PStyled = ({ content }) => <StyledParam>{content}</StyledParam>
 
-export default PStyled;
+export default PStyled
