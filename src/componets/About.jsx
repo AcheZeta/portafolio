@@ -1,30 +1,69 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import styled from 'styled-components'
 import Social from './Social'
 
-const About = ({ avatar, name, bio, profession, address }) => (
-    <div className='About'>
-        <div className='About-container'>
-            <div className='About-avatar'>
-                <figure src={ avatar } alt={ name }></figure>
-            </div>
-            <div className='About-name'>
-                <h2>{ name }</h2>
-            </div>
-            <div className='About-profession'>
-                <p>{ profession }</p>
-            </div>
-            <div className='About-description'>
-                <p>{ bio }</p>
-            </div>
-            <div className='About-location'>
-                <p>{ address }</p>
-            </div>
-            <div className='About-social'>
-                <Social Social={Social}/>
-            </div>
-        </div>
+const AboutStyle = styled.div`
+  text-align: center;
+`
+const AboutAvatar = styled.div`
+  padding: 2em 0 0 0;
+`
+const AboutAvatarImg = styled.img`
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  border: 5px solid #3f0f3f;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
+`
+const AboutName = styled.div`
+  text-align: center;
+`
+
+const Abouth2 = styled.h2`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #3f0f3f;
+  margin: 0.5 0 0 0;
+`
+const AboutProfession = styled.p`
+  margin: .2em 0 1em 0;
+  letter-spacing 1.6px;
+  font-weight: 300;
+  color: #3f0f3f;
+`
+
+const AboutBio = styled.p`
+  color: #7a757a;
+  font-size: 1em;
+  font-weight: 300;
+`
+
+const AboutLocation = styled.p`
+  color: #7a757a;
+  font-size: 1em;
+  font-weight: 300;
+`
+const About = ({ avatar, name, profession, bio, address, social }) => (
+  <AboutStyle>
+    <div className='About-container'>
+      <AboutAvatar>
+        <AboutAvatarImg src={avatar} alt={name} />
+      </AboutAvatar>
+      <AboutName>
+        <Abouth2>{name}</Abouth2>
+      </AboutName>
+      <AboutProfession>{profession}</AboutProfession>
+      <AboutBio>{bio}</AboutBio>
+      <AboutLocation>{address}</AboutLocation>
+      <div className='About-social'>
+        <Social social={social} />
+      </div>
     </div>
+  </AboutStyle>
 )
-    
-export default About;
+
+export default About
