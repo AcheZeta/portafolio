@@ -28,15 +28,16 @@ const App = () => {
   ) : (
     <Main>
       <GlobalStyle />
-      <Sidebar />
-      <About
-        avatar={data.avatar}
-        name={data.name}
-        bio={data.bio}
-        profession={data.profession}
-        address={data.address}
-        social={data.social}
-      />
+      <Sidebar>
+        <About
+          avatar={data.avatar}
+          name={data.name}
+          bio={data.bio}
+          profession={data.profession}
+          address={data.address}
+          social={data.social}
+        />
+      </Sidebar>
       <Info>
         <Education data={data.education} />
         <Certificates data={data.experience} />
