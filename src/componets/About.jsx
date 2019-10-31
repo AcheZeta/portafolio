@@ -45,7 +45,7 @@ const AboutBio = styled.p`
 const AboutLocation = styled.p`
   color: #7a757a;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
 `
 const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
