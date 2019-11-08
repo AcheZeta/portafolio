@@ -8,6 +8,7 @@ import About from '../componets/About'
 import Education from '../componets/Education'
 import Experience from '../componets/Experience'
 import Skill from '../componets/Skill'
+import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
 
 const GlobalStyle = createGlobalStyle`
@@ -42,6 +43,7 @@ const App = () => {
         <Education data={data.education} />
         <Experience data={data.experience} />
         <Skill data={data.skills} />
+        <Projects data={data.projects} />
       </Info>
     </Main>
   )
