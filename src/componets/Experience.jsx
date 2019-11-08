@@ -1,17 +1,21 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
+import H2Styled from '../Styled/H2Styled'
+import H3Styled from '../Styled/H3Styled'
+import SpanStyled from '../Styled/SpanStyled'
 
-const Experience = () => (
+const Experience = props => (
   <div className='Experience'>
+    <H2Styled name='<Experiencia' />
     <div className='Experience-container'>
       <div className='Experience-item'>
-        <h3>Laboratoria</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed,
-          culpa laudantium consectetur eaque officiis expedita nostrum odit
-          alias similique aliquam ducimus autem repellendus eligendi, tempore
-          facilis nihil? Consequatur, vero.
-        </p>
+        {props.data.map((exp, index) => (
+          <div className='Experience-item' key={`exp-${index}`}>
+            <H3Styled>{exp.jobTitle}</H3Styled>
+            <SpanStyled>{exp.company}</SpanStyled>
+            <SpanStyled>{exp.jobDescription}</SpanStyled>
+          </div>
+        ))}
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@ import Sidebar from '../componets/Sidebar'
 import Info from '../componets/Info'
 import About from '../componets/About'
 import Education from '../componets/Education'
-import Certificates from '../componets/Certificade'
+import Experience from '../componets/Experience'
 import Skill from '../componets/Skill'
 import useGetData from '../hooks/useGetData'
 
@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   const data = useGetData()
+  console.log(data)
 
   return data.length === 0 ? (
     <h1>Cargando...</h1>
@@ -39,7 +40,7 @@ const App = () => {
       </Sidebar>
       <Info>
         <Education data={data.education} />
-        <Certificates data={data.experience} />
+        <Experience data={data.experience} />
         <Skill data={data.skills} />
       </Info>
     </Main>
