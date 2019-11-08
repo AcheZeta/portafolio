@@ -1,7 +1,7 @@
 {
   "name": "curriculum",
   "short_name": "curriculum",
-  "description": "Hameyalli Elizalde CV",
+  "description": "A cv with react",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
@@ -9,7 +9,8 @@
   "start_url": "/?homescreen=1",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "icons": [{
+  "icons": [
+    {
       "src": "/assets/android-chrome-36x36.png",
       "sizes": "36x36",
       "type": "image/png"
