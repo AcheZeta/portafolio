@@ -4,9 +4,12 @@ import styled, { keyframes } from 'styled-components'
 
 const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  row-gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.5em;
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 const Skillsh5 = styled.h5`
   margin: 0.5em 0;

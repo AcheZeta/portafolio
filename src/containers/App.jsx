@@ -8,6 +8,7 @@ import About from '../componets/About'
 import Education from '../componets/Education'
 import Experience from '../componets/Experience'
 import Skill from '../componets/Skill'
+import Softkills from '../componets/Softskills'
 import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
 
@@ -38,12 +39,13 @@ const App = () => {
           address={data.address}
           social={data.social}
         />
+        <Softkills data={data.competency} />
       </Sidebar>
       <Info>
-        <Education data={data.education} />
         <Experience data={data.experience} />
-        <Skill data={data.skills} />
+        <Education data={data.education} />
         <Projects data={data.projects} />
+        <Skill data={data.skills} />
       </Info>
     </Main>
   )
