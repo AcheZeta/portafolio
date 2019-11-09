@@ -7,6 +7,7 @@ import PStyled from '../Styled/PStyled'
 import SpanStyled from '../Styled/SpanStyled'
 
 const Education = props => (
+
   <div className='<Education'>
     <H2Styled name='<Educación' />
     <div className='Education-container'>
