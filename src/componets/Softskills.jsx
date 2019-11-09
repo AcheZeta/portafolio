@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import H2Styled from '../Styled/H2Styled'
-import H4Styled from '../Styled/H4Styled'
 import styled from 'styled-components'
 
 const SoftSkillStyle = styled.div`
