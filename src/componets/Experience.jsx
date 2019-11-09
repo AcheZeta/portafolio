@@ -13,6 +13,7 @@ const Experience = props => (
           <div className='Experience-item' key={`exp-${index}`}>
             <H3Styled>{exp.jobTitle}</H3Styled>
             <SpanStyled>{exp.company}</SpanStyled>
+            <br />
             <SpanStyled>{exp.jobDescription}</SpanStyled>
           </div>
         ))}
