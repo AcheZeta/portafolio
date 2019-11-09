@@ -1,12 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import H2Styled from '../Styled/H2Styled'
 
 const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  row-gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.5em;
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 const Skillsh5 = styled.h5`
   margin: 0.5em 0;
@@ -58,6 +62,7 @@ const SkillsSpan = styled.span`
 
 const Skill = props => (
   <div className='Skills'>
+    <H2Styled name='<Habilidades' />
     <SkillsContainer>
       {props.data.map((skill, index) => (
         <div className='Skill-item' key={`skill-${index}`}>

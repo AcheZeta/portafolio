@@ -6,8 +6,10 @@ import Sidebar from '../componets/Sidebar'
 import Info from '../componets/Info'
 import About from '../componets/About'
 import Education from '../componets/Education'
-import Certificates from '../componets/Certificade'
+import Experience from '../componets/Experience'
 import Skill from '../componets/Skill'
+import Softkills from '../componets/Softskills'
+import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
 
 const GlobalStyle = createGlobalStyle`
@@ -37,10 +39,12 @@ const App = () => {
           address={data.address}
           social={data.social}
         />
+        <Softkills data={data.competency} />
       </Sidebar>
       <Info>
+        <Experience data={data.experience} />
         <Education data={data.education} />
-        <Certificates data={data.experience} />
+        <Projects data={data.projects} />
         <Skill data={data.skills} />
       </Info>
     </Main>

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AcheZeta/reactCV#readme",
   "dependencies": {
+    "devicon": "^2.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.4.0"
