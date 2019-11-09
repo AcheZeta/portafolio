@@ -23,7 +23,7 @@ const ProjectCard = styled.div`
 `
 const ProjectImg = styled.img`
   width: 100%;
-  border-radius: 10px
+  border-radius: 5px
   margin: 0 auto;
   display: block;
   box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
