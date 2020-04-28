@@ -2,12 +2,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledH3 = styled.h3`
+const StyledH4 = styled.h4`
   color: #212121;
   font-weight: 400;
   margin: 0.5em 0;
+  color: #3F0F3FM;
 `
 
-const H3Styled = ({ children }) => <StyledH3>{children}</StyledH3>
+const H4Styled = ({ children }) => <StyledH4>{children}</StyledH4>
 
-export default H3Styled
+export default H4Styled
