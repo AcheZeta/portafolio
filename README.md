@@ -7,7 +7,9 @@ Me apasiona la Tecnología, la educación, la gastronómia, el café y las causa
 ## Sígueme ✒️
 
 - [GitHub](https://github.com/AcheZeta)
-- [LinkedIn](https://www.linkedin.com/in/hameyalli-elizalde/)
+- [Stackblitz](https://stackblitz.com/@AcheZeta)
+- [CodePen](https://codepen.io/achezeta)
+- [LinkedIn](https://www.linkedin.com/in/hame-elizalde/)
 - [Medium](https://medium.com/@AcheZeta)
 - [Twitter](https://twitter.com/ache_zeta)
 
