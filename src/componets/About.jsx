@@ -4,8 +4,9 @@ import styled from 'styled-components'
 import Social from './Social'
 
 const AboutStyle = styled.div`
-  text-align: center;
+  text-align: left;
 `
+/*
 const AboutAvatar = styled.div`
   padding: 2em 0 0 0;
 `
@@ -18,16 +19,19 @@ const AboutAvatarImg = styled.img`
   display: block;
   box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
 `
+*/
 const AboutName = styled.div`
-  text-align: center;
+  text-align: left;
 `
 
 const Abouth2 = styled.h2`
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-size: 2rem;
+  /* font-weight: 400;  */
   letter-spacing: 1.2px;
   color: #3f0f3f;
   margin: 0.5 0 0 0;
+  text-transform: uppercase;
 `
 const AboutProfession = styled.p`
   margin: .2em 0 1em 0;
@@ -50,9 +54,6 @@ const AboutLocation = styled.p`
 const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className='About-container'>
-      <AboutAvatar>
-        <AboutAvatarImg src={avatar} alt={name} />
-      </AboutAvatar>
       <AboutName>
         <Abouth2>{name}</Abouth2>
       </AboutName>
