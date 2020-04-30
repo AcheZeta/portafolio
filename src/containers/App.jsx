@@ -38,14 +38,13 @@ const App = () => {
             address={data.address}
             social={data.social}
           />
-          <Softkills data={data.competency} />
         </Sidebar>
         <Info>
           <Projects data={data.projects} />
           <Education data={data.education} />
           <Skill data={data.skills} />
           <Experience data={data.experience} />
-
+          <Softkills data={data.competency} />
         </Info>
       </Main>
     )
