@@ -7,7 +7,7 @@ const StyledH2 = styled.h2`
   font-weight: 300;
   letter-spacing: 0.8px;
   margin: 1em 0 0 0;
-  color: #3F0F3FM;
+  color: #212121;
 `;
 
 const H2Styled = ({ name }) => <StyledH2>{name}></StyledH2>;
