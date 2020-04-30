@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SoftSkillStyle = styled.div`
-  text-align: center;
+  text-align: left;
 `
 const SoftSkillsItem = styled.p`
   color: #1f262a;
