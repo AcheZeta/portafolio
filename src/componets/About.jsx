@@ -31,7 +31,7 @@ const Abouth2 = styled.h2`
 `
 const AboutProfession = styled.p`
   margin: .2em 0 1em 0;
-  letter-spacing 1.6px;
+  letter-spacing: 1.6px;
   font-weight: 400;
   color: #3f0f3f;
 `

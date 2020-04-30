@@ -27,27 +27,28 @@ const App = () => {
   return data.length === 0 ? (
     <h1>Cargando...</h1>
   ) : (
-    <Main>
-      <GlobalStyle />
-      <Sidebar>
-        <About
-          avatar={data.avatar}
-          name={data.name}
-          bio={data.bio}
-          profession={data.profession}
-          address={data.address}
-          social={data.social}
-        />
-        <Softkills data={data.competency} />
-      </Sidebar>
-      <Info>
-        <Experience data={data.experience} />
-        <Education data={data.education} />
-        <Projects data={data.projects} />
-        <Skill data={data.skills} />
-      </Info>
-    </Main>
-  )
+      <Main>
+        <GlobalStyle />
+        <Sidebar>
+          <About
+            avatar={data.avatar}
+            name={data.name}
+            bio={data.bio}
+            profession={data.profession}
+            address={data.address}
+            social={data.social}
+          />
+          <Softkills data={data.competency} />
+        </Sidebar>
+        <Info>
+          <Projects data={data.projects} />
+          <Education data={data.education} />
+          <Skill data={data.skills} />
+          <Experience data={data.experience} />
+
+        </Info>
+      </Main>
+    )
 }
 
 export default App
