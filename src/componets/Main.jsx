@@ -11,7 +11,7 @@ const MainStyle = styled.div`
 
 const MainContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 0.5em;
   @media only screen and (max-width: 767px) {
