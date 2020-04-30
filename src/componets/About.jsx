@@ -24,12 +24,12 @@ const AboutName = styled.div`
   text-align: left;
 `
 
-const Abouth2 = styled.h2`
+const Nameh2 = styled.h2`
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  /* font-weight: 400;  */
+  font-size: 3rem;
+  font-weight: 400;
   letter-spacing: 1.2px;
-  color: #3f0f3f;
+  color: #212121;
   margin: 0.5 0 0 0;
   text-transform: uppercase;
 `
@@ -37,7 +37,8 @@ const AboutProfession = styled.p`
   margin: .2em 0 1em 0;
   letter-spacing: 1.6px;
   font-weight: 400;
-  color: #3f0f3f;
+  font-size: 1.5rem;
+  color: #424041;
 `
 
 const AboutBio = styled.p`
@@ -55,7 +56,7 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className='About-container'>
       <AboutName>
-        <Abouth2>{name}</Abouth2>
+        <Nameh2>{name}</Nameh2>
       </AboutName>
       <AboutProfession>{profession}</AboutProfession>
       <AboutBio>{bio}</AboutBio>
