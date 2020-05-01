@@ -9,7 +9,7 @@ const StyledHR = styled.hr`
     width: 50%;
     text-align: left;
     margin-left:0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 `
 
 const HRStyled = () => <StyledHR></StyledHR>
