@@ -5,6 +5,9 @@ import Social from './Social'
 
 const AboutStyle = styled.div`
   text-align: left;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 `
 /*
 const AboutAvatar = styled.div`
@@ -19,10 +22,11 @@ const AboutAvatarImg = styled.img`
   display: block;
   box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
 `
-*/
+
 const AboutName = styled.div`
   text-align: left;
 `
+*/
 
 const Nameh2 = styled.h2`
   font-family: 'Roboto', sans-serif;
@@ -43,7 +47,7 @@ const AboutProfession = styled.p`
 
 const AboutBio = styled.p`
   color: #1f262a;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
 `
 
@@ -55,9 +59,9 @@ const AboutLocation = styled.p`
 const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className='About-container'>
-      <AboutName>
+      <div className='AboutName'>
         <Nameh2>{name}</Nameh2>
-      </AboutName>
+      </div>
       <AboutProfession>{profession}</AboutProfession>
       <AboutBio>{bio}</AboutBio>
       <AboutLocation>{address}</AboutLocation>
