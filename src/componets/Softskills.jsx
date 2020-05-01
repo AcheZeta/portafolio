@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import styled from 'styled-components'
+import HRStyled from '../Styled/HrStyled'
+import H2Styled from '../Styled/H2Styled'
 
 const SoftSkillStyle = styled.div`
   text-align: left;
@@ -18,7 +20,8 @@ const SoftSkillH2 = styled.h2`
 
 const SoftSkills = props => (
   <SoftSkillStyle>
-    <SoftSkillH2>SoftSkills</SoftSkillH2>
+    <H2Styled name='Soft Skills' />
+    <HRStyled/>
     <div className='Softskill-container'>
       {props.data.map((soft, index) => (
         <div className='Softskill-item' key={`Soft-${index}`}>

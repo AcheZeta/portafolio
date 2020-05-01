@@ -5,11 +5,13 @@ import H3Styled from '../Styled/H3Styled'
 import H4Styled from '../Styled/H4Styled'
 import PStyled from '../Styled/PStyled'
 import SpanStyled from '../Styled/SpanStyled'
+import HRStyled from '../Styled/HrStyled'
 
 const Education = props => (
 
-  <div className='<Education'>
-    <H2Styled name='<Educación' />
+  <div className='Education'>
+    <H2Styled name='Educación' />
+    <HRStyled/>
     <div className='Education-container'>
       {props.data.map((edu, index) => (
         <div className='Education-item' key={`Edu-${index}`}>

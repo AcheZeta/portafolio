@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import H2Styled from '../Styled/H2Styled'
 import H3Styled from '../Styled/H3Styled'
 import H4Styled from '../Styled/H4Styled'
+import HRStyled from '../Styled/HrStyled'
 
 const ProjectContainer = styled.div`
   display: grid;
@@ -23,7 +24,7 @@ const ProjectCard = styled.div`
 `
 const ProjectImg = styled.img`
   width: 100%;
-  border-radius: 5px
+  border-radius: 5px;
   margin: 0 auto;
   display: block;
   box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
@@ -35,12 +36,13 @@ const ProjectAnchor = styled.a`
   color: #212121;
   text-decoration: none;
   font-size: 1.2em;
-  text-aling: right;
+  text-align: right;
 `
 
 const Projects = props => (
   <div className='Projectos'>
-    <H2Styled name='<Proyectos' />
+    <H2Styled name='Proyectos' />
+    <HRStyled/>
     <ProjectContainer>
       {props.data.map((proj, index) => (
         //Card
