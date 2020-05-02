@@ -8,9 +8,10 @@ import About from '../componets/About'
 import Education from '../componets/Education'
 import Experience from '../componets/Experience'
 import Skill from '../componets/Skill'
-import Softkills from '../componets/Softskills'
 import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
+import Loading from '../componets/Loading'
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -25,7 +26,10 @@ const App = () => {
   const data = useGetData()
 
   return data.length === 0 ? (
-    <h1>Cargando...</h1>
+    <Main>
+        <GlobalStyle />
+        <Loading />
+      </Main>
   ) : (
       <Main>
         <GlobalStyle />
@@ -39,12 +43,12 @@ const App = () => {
             social={data.social}
           />
         </Sidebar>
-        <Info>
-          <Projects data={data.projects} />
+        <Projects data={data.projects} />
           <Skill 
             softskills={data.competency}
             hardskills={data.skills}
           />
+        <Info>
           <Education data={data.education} />
           <Experience data={data.experience} />
         </Info>
