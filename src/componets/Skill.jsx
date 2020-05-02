@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import H2Styled from '../Styled/H2Styled'
 import HRStyled from '../Styled/HrStyled'
 
