@@ -41,10 +41,12 @@ const App = () => {
         </Sidebar>
         <Info>
           <Projects data={data.projects} />
+          <Skill 
+            softskills={data.competency}
+            hardskills={data.skills}
+          />
           <Education data={data.education} />
-          <Skill data={data.skills} />
           <Experience data={data.experience} />
-          <Softkills data={data.competency} />
         </Info>
       </Main>
     )
