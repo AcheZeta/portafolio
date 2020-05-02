@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Social from './Social'
 
 const AboutStyle = styled.div`
@@ -9,24 +9,14 @@ const AboutStyle = styled.div`
   display: flex;
   align-items: center;
 `
-/*
-const AboutAvatar = styled.div`
-  padding: 2em 0 0 0;
+const move = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 `
-const AboutAvatarImg = styled.img`
-  border-radius: 100%;
-  width: 160px;
-  height: 160px;
-  border: 5px solid #3f0f3f;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 0 10px rbga(0, 0, 0, 0.6);
-`
-
-const AboutName = styled.div`
-  text-align: left;
-`
-*/
 
 const Nameh2 = styled.h2`
   font-family: 'Roboto', sans-serif;
@@ -36,6 +26,7 @@ const Nameh2 = styled.h2`
   color: #212121;
   margin: 0.5 0 0 0;
   text-transform: uppercase;
+  animation: ${move} 2s ease-in both;;
 `
 const AboutProfession = styled.p`
   margin: .2em 0 1em 0;
@@ -56,6 +47,7 @@ const AboutLocation = styled.p`
   font-size: 1em;
   font-weight: 400;
 `
+
 const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className='About-container'>
