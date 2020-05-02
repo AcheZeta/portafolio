@@ -67,11 +67,11 @@ const Projects = props => (
             <ProjectDetail>
               <ProjectDescription>{proj.description}</ProjectDescription>
               <i className={proj.t1}></i>
-              <i class={proj.t2}></i>
-              <i class={proj.t3}></i>
-              <i class={proj.t4}></i>
+              <i className={proj.t2}></i>
+              <i className={proj.t3}></i>
+              <i className={proj.t4}></i>
               <ProjectAnchor href={proj.githubLink} target='_blank'>
-                <i class='devicon-github-plain'></i>
+                <i className='devicon-github-plain'></i>
               </ProjectAnchor>
             </ProjectDetail>
           </div>
