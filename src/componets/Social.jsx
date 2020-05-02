@@ -28,7 +28,7 @@ const SocialIcon = styled.i`
   color: ${props => props.theme.color};
 `
 const colorSocial = {
-  color: '#3f0f3f'
+  color: '#212121'
 }
 
 const getColor = name => {

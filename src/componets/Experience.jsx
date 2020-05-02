@@ -3,10 +3,12 @@ import React from 'react'
 import H2Styled from '../Styled/H2Styled'
 import H3Styled from '../Styled/H3Styled'
 import SpanStyled from '../Styled/SpanStyled'
+import HRStyled from '../Styled/HrStyled'
 
 const Experience = props => (
   <div className='Experience'>
-    <H2Styled name='<Experiencia' />
+    <H2Styled name='Experiencia' />
+    <HRStyled/>
     <div className='Experience-container'>
       <div className='Experience-item'>
         {props.data.map((exp, index) => (
