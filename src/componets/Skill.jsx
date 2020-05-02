@@ -4,15 +4,14 @@ import styled from 'styled-components'
 import H2Styled from '../Styled/H2Styled'
 import HRStyled from '../Styled/HrStyled'
 
-
 const SkillsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 5px;
+  grid-column-gap: 7rem;
   grid-row-gap: 0;
   @media only screen and (max-width: 767px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `
 const Skillsh5 = styled.h5`
@@ -29,6 +28,7 @@ const SoftskillDiv = styled.div`
 const HardskillDiv = styled.div`
   grid-area: 1 / 2 / 2 / 3;
 `
+
 
 const Skill = ({ hardskills, softskills }) => (
   <div className='Skills'>
