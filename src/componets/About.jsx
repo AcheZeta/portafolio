@@ -2,6 +2,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Social from './Social'
+import Scroll from '../componets/Scroll'
 
 const AboutStyle = styled.div`
   text-align: left;
@@ -9,6 +10,7 @@ const AboutStyle = styled.div`
   display: flex;
   align-items: center;
 `
+
 const move = keyframes`
   0% {
     opacity: 0;
@@ -48,7 +50,7 @@ const AboutLocation = styled.p`
   font-weight: 400;
 `
 
-const About = ({ avatar, name, profession, bio, address, social }) => (
+const About = ({ name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className='About-container'>
       <div className='AboutName'>
@@ -60,6 +62,7 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
       <div className='About-social'>
         <Social social={social} />
       </div>
+      <Scroll />
     </div>
   </AboutStyle>
 )
