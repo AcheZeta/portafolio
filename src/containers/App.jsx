@@ -12,7 +12,6 @@ import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
 import Loading from '../componets/Loading'
 
-
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Lato', sans-serif;
@@ -27,9 +26,9 @@ const App = () => {
 
   return data.length === 0 ? (
     <Main>
-        <GlobalStyle />
-        <Loading />
-      </Main>
+      <GlobalStyle />
+      <Loading />
+    </Main>
   ) : (
       <Main>
         <GlobalStyle />
@@ -44,10 +43,10 @@ const App = () => {
           />
         </Sidebar>
         <Projects data={data.projects} />
-          <Skill 
-            softskills={data.competency}
-            hardskills={data.skills}
-          />
+        <Skill
+          softskills={data.competency}
+          hardskills={data.skills}
+        />
         <Info>
           <Education data={data.education} />
           <Experience data={data.experience} />
