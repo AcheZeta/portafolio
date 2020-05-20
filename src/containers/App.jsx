@@ -11,6 +11,7 @@ import Skill from '../componets/Skill'
 import Projects from '../componets/Projects'
 import useGetData from '../hooks/useGetData'
 import Loading from '../componets/Loading'
+import Footer from '../componets/Footer'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -51,6 +52,8 @@ const App = () => {
           <Education data={data.education} />
           <Experience data={data.experience} />
         </Info>
+        <Footer social={data.social}>
+        </Footer>
       </Main>
     )
 }
