@@ -11,15 +11,6 @@ const AboutStyle = styled.div`
   align-items: center;
 `
 
-const move = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`
-
 const Nameh2 = styled.h2`
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
@@ -28,7 +19,6 @@ const Nameh2 = styled.h2`
   color: #212121;
   margin: 0.5 0 0 0;
   text-transform: uppercase;
-  animation: ${move} 2s ease-in both;;
 `
 const AboutProfession = styled.p`
   margin: .2em 0 1em 0;
@@ -50,15 +40,15 @@ const AboutLocation = styled.p`
   font-weight: 400;
 `
 
-const About = ({ name, profession, bio, address, social }) => (
+const About = ({ social }) => (
   <AboutStyle>
     <div className='About-container'>
       <div className='AboutName'>
-        <Nameh2>{name}</Nameh2>
+        <Nameh2>Hame ELizalde</Nameh2>
       </div>
-      <AboutProfession>{profession}</AboutProfession>
-      <AboutBio>{bio}</AboutBio>
-      <AboutLocation>{address}</AboutLocation>
+      <AboutProfession>Front-End Developer</AboutProfession>
+      <AboutBio>Apasionada por la tecnología, la educación, causas sociales.</AboutBio>
+      <AboutLocation>México</AboutLocation>
       <div className='About-social'>
         <Social social={social} />
       </div>

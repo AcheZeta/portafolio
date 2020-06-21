@@ -28,7 +28,9 @@ const App = () => {
   return data.length === 0 ? (
     <Main>
       <GlobalStyle />
-      <Loading />
+      <About
+        social={data.social}
+      />
     </Main>
   ) : (
       <Main>
