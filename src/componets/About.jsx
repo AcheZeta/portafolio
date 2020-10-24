@@ -51,7 +51,7 @@ const About = ({ social }) => (
         Soy una desarrolladora web con experiencia en sectores de educación y marketing.
         Me apasiona colaborar en proyectos que generen un impacto positivo en la sociedad y aprender de las personas que me rodean.
       </AboutBio>
-      <AboutLocation>México</AboutLocation>
+      <AboutLocation>📍  México</AboutLocation>
       <div className='About-social'>
         <Social social={social} />
       </div>
