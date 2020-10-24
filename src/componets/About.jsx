@@ -47,7 +47,10 @@ const About = ({ social }) => (
         <Nameh2>Hame ELizalde</Nameh2>
       </div>
       <AboutProfession>Front-End Developer</AboutProfession>
-      <AboutBio>Apasionada por la tecnología, la educación, causas sociales.</AboutBio>
+      <AboutBio>
+        Soy una desarrolladora web con experiencia en sectores de educación y marketing.
+        Me apasiona colaborar en proyectos que generen un impacto positivo en la sociedad y aprender de las personas que me rodean.
+      </AboutBio>
       <AboutLocation>México</AboutLocation>
       <div className='About-social'>
         <Social social={social} />
